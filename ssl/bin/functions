@@ -1,0 +1,21 @@
+#!/bin/bash
+
+confirm () {
+	local RESPONSE
+	read -r -p "Would you like to proceed? [Y/n] " RESPONSE
+	if [[ $RESPONSE = "" ]]; then RESPONSE="Y"; fi
+	if [[ $RESPONSE =~ ^([yY][eE][sS]|[yY])$ ]]
+	then
+		echo 0
+	else
+		echo 1
+	fi
+}
+
+get_key () {
+  # $1: key name
+  # $2: filename to search in
+  local VALUE
+  VALUE=$( sed -n 's/^'$1'[ ]*=[ ]*//p' $2 | tr -d \" )
+  echo $VALUE
+}

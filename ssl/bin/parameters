@@ -1,0 +1,8 @@
+#!/bin/bash
+
+: ${BRAND:='Widget Corp'}
+
+C="US"
+O="$BRAND"
+OU="$O"" Bootstrap Certification Authority"
+CA_CN="$BRAND"" Bootstrap Root Certification Authority"
