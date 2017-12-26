@@ -24,7 +24,7 @@ What this does not do (yet):
 Pre-requisites:
 1. Digital Ocean account to create the service nodes
 2. (preferably) macOS or Linux machine with:
-   3. BASH (kind of standard, isn't it? :-) )
-   4. Terraform (https://terraform.io/)
-   5. OpenSSL (to help create certs)
-   6. jq (not mandatory, but helps connecting to newly deployed nodes)
+    1. BASH (kind of standard, isn't it? :-) )
+    4. Terraform (https://terraform.io/)
+    5. OpenSSL (to help create certs)
+    6. jq (not mandatory, but helps connecting to newly deployed nodes)
